@@ -8,7 +8,7 @@ const PORT = process.env.port || 4000
 
 app.use(morgan('dev'));
 
-app.use(express.static(path.resolve(__dirname,'..', "build")));
+app.use(express.static(path.resolve(__dirname, '..', "build")));
 
 app.use('*', renderer);
 

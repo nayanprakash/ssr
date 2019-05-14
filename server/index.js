@@ -1,4 +1,5 @@
-require('@babel/register');
+// polyfills
+require('@babel/polyfill');
 require('@babel/register')({
     "ignore": [/\/(build|node_modules)\//],
     "presets": [

@@ -17,16 +17,14 @@ const AboutPage = Loadable({
 });
 
 const Routes = () => (
-    <Router>
-        <>
-            <Header />
-            <Switch>
-                <Route exact path="/" component={Homepage}></Route>
-                <Route path="/contact" component={ContactPage}></Route>
-                <Route path="/about" component={AboutPage}></Route>
-            </Switch>
-        </>
-    </Router>
+    <>
+        <Header />
+        <Switch>
+            <Route exact path="/" component={Homepage}></Route>
+            <Route path="/contact" component={ContactPage}></Route>
+            <Route path="/about" component={AboutPage}></Route>
+        </Switch>
+    </>
 );
 
 export default Routes;
