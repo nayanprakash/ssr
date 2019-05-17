@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "server:dev": "node ./server",
     "lint": "eslint . --ignore-path .gitignore",
-    "staged": "lint-staged"
+    "staged": "lint-staged",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,10 +55,5 @@
     "morgan": "^1.9.1",
     "prettier": "^1.17.1",
     "react-loadable": "^5.5.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier --write \"**/*.json\" \"**/*.js\" \"!build/**/*.js\" \"!build/**/*.json\""
-    }
   }
 }

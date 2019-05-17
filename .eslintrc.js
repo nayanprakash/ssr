@@ -4,28 +4,28 @@ module.exports = {
     commonjs: true,
     es6: true
   },
-  extends: ['eslint:recommended', 'prettier', 'react-app'],
-  plugins: ['prettier', 'react'],
+  extends: ["eslint:recommended", "prettier", "react-app"],
+  plugins: ["prettier", "react"],
   parserOptions: {
     ecmaVersion: true,
     ecmaFeatures: {
       jsx: true
     },
-    sourceType: 'module'
+    sourceType: "module"
   },
   rules: {
     //indent: [2, 4],
-    'no-console': 1,
-    'no-case-declarations': 1,
+    "no-console": 1,
+    "no-case-declarations": 1,
     //'linebreak-style': [2, 'unix'],
-    quotes: [1, 'single'],
-    semi: [2, 'always'],
-    'prettier/prettier': [2, null, '@prettier']
+    quotes: ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+    semi: [2, "always"],
+    "prettier/prettier": ["error", { "singleQuote": false }]
   },
   overrides: [
     {
       // for Node.js server-side js files
-      files: ['server/**/*.js'],
+      files: ["server/**/*.js"],
       env: {
         browser: false,
         commonjs: true,
@@ -36,10 +36,10 @@ module.exports = {
         ecmaFeatures: {
           jsx: true
         },
-        sourceType: 'script'
+        sourceType: "script"
       },
       rules: {
-        strict: [2, 'global']
+        strict: [2, "global"]
       }
     }
   ]

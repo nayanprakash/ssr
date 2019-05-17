@@ -22,7 +22,7 @@ const isLocalhost = Boolean(
 
 export function register(config) {
   //eslint-disable-next-line
-  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
     // The URL constructor is available in all browsers that support SW.
     //eslint-disable-next-line
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
@@ -88,7 +88,7 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               //eslint-disable-next-line
-              console.log('Content is cached for offline use.');
+              console.log("Content is cached for offline use.");
 
               // Execute callback
               if (config && config.onSuccess) {
@@ -101,7 +101,7 @@ function registerValidSW(swUrl, config) {
     })
     .catch(error => {
       //eslint-disable-next-line
-      console.error('Error during service worker registration:', error);
+      console.error("Error during service worker registration:", error);
     });
 }
 
