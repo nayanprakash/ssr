@@ -1,18 +1,18 @@
-"use strict";
+'use strict';
 // polyfills
-require("@babel/polyfill");
-require("@babel/register")({
+require('@babel/polyfill');
+require('@babel/register')({
   ignore: [/\/(build|node_modules)\//],
-  presets: ["@babel/preset-env", "@babel/preset-react"],
+  presets: ['@babel/preset-env', '@babel/preset-react'],
   plugins: [
-    "@babel/plugin-syntax-dynamic-import",
+    '@babel/plugin-syntax-dynamic-import',
     [
-      "transform-assets",
+      'transform-assets',
       {
-        extensions: ["svg", "css"],
-        name: "[name].[ext]?[sha512:hash:base64:7]"
+        extensions: ['svg', 'css'],
+        name: '[name].[ext]?[sha512:hash:base64:7]'
       }
     ]
   ]
 });
-require("./server");
+require('./server');

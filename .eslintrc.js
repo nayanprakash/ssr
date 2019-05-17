@@ -18,9 +18,9 @@ module.exports = {
     "no-console": 1,
     "no-case-declarations": 1,
     //'linebreak-style': [2, 'unix'],
-    quotes: ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+    quotes: ["error", "single", { avoidEscape: true, allowTemplateLiterals: false }],
     semi: [2, "always"],
-    "prettier/prettier": ["error", { "singleQuote": false }]
+    "prettier/prettier": ["error", { "singleQuote": true }]
   },
   overrides: [
     {

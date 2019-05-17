@@ -1,11 +1,11 @@
-import { createMemoryHistory, createBrowserHistory } from "history";
+import { createMemoryHistory, createBrowserHistory } from 'history';
 export const isServer = !(
-  typeof window !== "undefined" &&
+  typeof window !== 'undefined' &&
   window.document &&
   window.document.createElement
 );
 
-export default (url = "/") => {
+export default (url = '/') => {
   // Create a history depending on the environment
   const history = isServer
     ? createMemoryHistory({
